@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lb/qlb-post-meta",
+  "version": "0.1.0",
+  "title": "Query Loop Block: Display Post Meta",
+  "category": "text",
+  "icon": "smiley",
+  "description": "Display post meta from ACF in the Query Loop Block",
+  "example": {},
+  "supports": {
+    "html": false,
+    "color": {
+      "text": true,
+      "link": false,
+      "background": true
+    }
+  },
+  "textdomain": "qlb-post-meta",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "post_meta_name": {
+      "type": "string",
+      "default": {
+        "title": "Learn More"
+      }
+    }
+  }
+}
